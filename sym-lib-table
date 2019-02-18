@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name MC68000_PLCC68)(type Legacy)(uri ${KIPRJMOD}/lib/MC68000_PLCC68.lib)(options "")(descr ""))
+  (lib (name ATF1502AS-10JU44)(type Legacy)(uri ${KIPRJMOD}/lib/ATF1502AS-10JU44.lib)(options "")(descr ""))
+  (lib (name HYB5118160BSJ)(type Legacy)(uri ${KIPRJMOD}/lib/HYB5118160BSJ.lib)(options "")(descr ""))
+)
