@@ -6,12 +6,12 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "OpenAmiga600FastRamExpansion"
-Date "2019-02-18"
+Date "2019-02-19"
 Rev "1git"
 Comp "SukkoPera"
-Comment1 "Thanks to lvd"
-Comment2 ""
-Comment3 ""
+Comment1 "Based on work by Kipper2K"
+Comment2 "Original design by lvd/NedoPC"
+Comment3 "Licensed under CERN OHL v.1.2"
 Comment4 ""
 $EndDescr
 $Comp
@@ -1971,76 +1971,8 @@ Text Notes 14810 4200 1    50   ~ 0
 C3 on Kipper2K's board
 Text Notes 15430 3530 1    50   ~ 0
 C13 on Kipper2K's board
-$Comp
-L Device:C C13
-U 1 1 5CAED17C
-P 9870 10370
-F 0 "C13" H 9900 10460 50  0000 L CNN
-F 1 "100n" H 9910 10280 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_5x5.8" H 9908 10220 50  0001 C CNN
-F 3 "~" H 9870 10370 50  0001 C CNN
-	1    9870 10370
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C14
-U 1 1 5CAED183
-P 10180 10370
-F 0 "C14" H 10210 10460 50  0000 L CNN
-F 1 "100n" H 10220 10280 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_5x5.8" H 10218 10220 50  0001 C CNN
-F 3 "~" H 10180 10370 50  0001 C CNN
-	1    10180 10370
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10180 10030 10180 10220
-Connection ~ 10020 10030
-Wire Wire Line
-	10020 10030 10180 10030
-$Comp
-L power:VCC #PWR027
-U 1 1 5CAED18F
-P 10020 9910
-F 0 "#PWR027" H 10020 9760 50  0001 C CNN
-F 1 "VCC" H 10037 10083 50  0000 C CNN
-F 2 "" H 10020 9910 50  0001 C CNN
-F 3 "" H 10020 9910 50  0001 C CNN
-	1    10020 9910
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10020 9910 10020 10030
-$Comp
-L power:GND #PWR026
-U 1 1 5CAED196
-P 10010 10870
-F 0 "#PWR026" H 10010 10620 50  0001 C CNN
-F 1 "GND" H 10015 10697 50  0000 C CNN
-F 2 "" H 10010 10870 50  0001 C CNN
-F 3 "" H 10010 10870 50  0001 C CNN
-	1    10010 10870
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10180 10740 10180 10520
-Wire Wire Line
-	9870 10520 9870 10740
-Wire Wire Line
-	9870 10740 10010 10740
-Wire Wire Line
-	9870 10220 9870 10030
-Wire Wire Line
-	9870 10030 10020 10030
-Wire Wire Line
-	10010 10870 10010 10740
-Connection ~ 10010 10740
-Wire Wire Line
-	10010 10740 10180 10740
 Text Notes 9600 9610 0    50   ~ 0
 GENERAL DECOUPLING
-Text Notes 10260 10670 0    50   ~ 0
-100n electrolytics???
 $Comp
 L power:VCC #PWR030
 U 1 1 5CB4D2CF
@@ -2103,6 +2035,43 @@ F 3 "" H 11330 10770 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 NoConn ~ 11330 10620
+$Comp
+L Device:C C13
+U 1 1 5CD6434E
+P 10030 10240
+F 0 "C13" H 10145 10286 50  0000 L CNN
+F 1 "10u" H 10145 10195 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 10068 10090 50  0001 C CNN
+F 3 "~" H 10030 10240 50  0001 C CNN
+	1    10030 10240
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0105
+U 1 1 5CD64354
+P 10030 9970
+F 0 "#PWR0105" H 10030 9820 50  0001 C CNN
+F 1 "VCC" H 10047 10143 50  0000 C CNN
+F 2 "" H 10030 9970 50  0001 C CNN
+F 3 "" H 10030 9970 50  0001 C CNN
+	1    10030 9970
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5CD6435A
+P 10030 10540
+F 0 "#PWR0106" H 10030 10290 50  0001 C CNN
+F 1 "GND" H 10035 10367 50  0000 C CNN
+F 2 "" H 10030 10540 50  0001 C CNN
+F 3 "" H 10030 10540 50  0001 C CNN
+	1    10030 10540
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10030 9970 10030 10090
+Wire Wire Line
+	10030 10390 10030 10540
 Wire Bus Line
 	11610 4190 11610 8500
 Wire Bus Line
