@@ -30,11 +30,13 @@ RAM chips can either be soldered directly to the board or installed in sockets. 
 ### Assembly and Installation
 Open your A600, doing your best not to crack any of the small tabs that hold the case together. If your A600 has the top part of the shielding, remove it and store it somewhere, as you will not be able to put it back in place when the expansion is installed. The same goes for the HD cradle, sorry.
 
-Before soldering the CPU socket you will need to rework it a bit: you should sand down one of its edges which will hit resistor R102 that is present in REV 1.5 boards (at least), so try to fit it on the CPU (a large square chip with *MC68000* written on it) and see which corner it is. Make sure to match the correct orientation: one of the corners of the chip is cut and, if you look at the socket, one of its corners will match that.
+Lots of A600s (and of A1200s, for the record) have issues with leaking electrolytic capacitors, therefore I really recommend to inspect them first, while you have your Amiga open. They might be leaking even if your Amiga shows no problems and when it finally will, it might be too late (= expensive) to salvage it. So, if you notice any brownish or black marks around those shiny metal cylinders, get them replaced. It is NOT an easy thing to do, and you need some decent tools anyway, so I really recommend to contact a professional, there are many people on Amiga forums offering this kind of service.
+
+Before soldering the CPU socket you will need to rework it a bit: you should sand down one of its edges, or it will hit resistor R102 that is present in REV 1.5 boards (at least). Thus try to fit it on the CPU (the large square chip with *MC68000* written on it) and see which corner it is. Make sure to match the correct orientation: one of the corners of the chip is cut and, if you look at the socket, one of its corners will match that.
 
 Besides that, most PLCC sockets have some sort of "stand-offs" on the bottom (which is going to be our top), which you are recommended to sand down, too. I also suggest to clean the CPU pins if possible, using contact cleaner or isopropyl alcool, as all sorts of gunk have probably gathered on them over the years. Let them dry well then. All of this should hopefully make the socket fit better on the chip. 
 
-Normally it is not necessary to mount all the decoupling capacitors. I usually skip C4 and C7. All of them are 100nF in the 0805 package anyway. Maybe capacitor C13 can be left out as well, your choice
+Normally it is not necessary to mount all the decoupling capacitors. I usually skip C4 and C7. Maybe capacitor C13 can be left out as well, your choice.
 
 After everything has been soldered, just install the expansion. Push it down firmly until it feels solidly in place but don't force it.
 
