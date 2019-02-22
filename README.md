@@ -40,7 +40,7 @@ Besides that, most PLCC sockets have some sort of "stand-offs" on the bottom (wh
 
 After you solder the socket, you can cut the bottom of it so that the window in the PCB continues through the socket. Most sockets will already have holes on the bottom that will make this operation easier. This will allow you to install a 14x14mm heatsink on the CPU, which might be a good idea since installing the board will somewhat reduce the heat dissipation capabilities of the chip. Make sure to use good thermal adhesive/glue, otherwise you risk to make the dissipation even worse.
 
-Normally it is not necessary to mount all the decoupling capacitors. I usually skip C4 and C7. Maybe capacitor C13 can be left out as well, your choice. You also free not to install power led LD1, if so you prefer. In case, skip R4 too.
+Normally it is not necessary to mount all the decoupling capacitors. I usually skip C4 and C7. Maybe capacitor C13 can be left out as well, your choice. R4 should be chosen according to the particular led you will be using for LD1. Actually you are free to skip LD1 and R4 altogether, if you hate power LEDs.
 
 After everything has been soldered, you will need to program the CPLD. Whenever you do so, **make sure to carefully remove the board from your Amiga, or you might risk damaging it**. Use the typical cheap *USB Blaster* clone you can find on eBay for the task.
 
