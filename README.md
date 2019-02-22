@@ -42,7 +42,9 @@ After you solder the socket, you can cut the bottom of it so that the window in 
 
 Normally it is not necessary to mount all the decoupling capacitors. I usually skip C4 and C7. Maybe capacitor C13 can be left out as well, your choice. You also free not to install power led LD1, if so you prefer. In case, skip R4 too.
 
-After everything has been soldered, just install the expansion. Push it down firmly until it feels solidly in place but don't force it.
+After everything has been soldered, you will need to program the CPLD. Whenever you do so, **make sure to carefully remove the board from your Amiga, or you might risk damaging it**. Use the typical cheap *USB Blaster* clone you can find on eBay for the task.
+
+Finally, install the expansion in your A600: place it over the CPU with the correct orientation and push it down firmly until it feels solidly in place but don't force it.
 
 Before reassembling your case, I recommend to run [SysTest](https://github.com/keirf/Amiga-Stuff). Use the Memory option (<kbd>F1</kbd>), it must show 4 MB of Fast RAM. Then start the Memory Test (<kbd>F1</kbd> again) and let it run for 50-100 rounds: if it doesn't find any errors, you are probably good to go. If you get any errors, power off your computer and try to give the expansion a better fit, by pushing it further down or twisting it slightly back and forth.
 
