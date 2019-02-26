@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "OpenAmiga600FastRamExpansion"
-Date "2019-02-19"
+Date "2019-02-27"
 Rev "1git"
 Comp "SukkoPera"
 Comment1 "Based on work by Kipper2K"
@@ -2029,12 +2029,11 @@ U 1 1 5CCAA517
 P 11330 10770
 F 0 "P98" V 11234 10829 40  0000 L CNN
 F 1 "SCREW_HOLE" V 11302 10829 30  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm" H 11330 10770 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad_Via" H 11330 10770 50  0001 C CNN
 F 3 "" H 11330 10770 50  0001 C CNN
 	1    11330 10770
 	0    1    1    0   
 $EndComp
-NoConn ~ 11330 10620
 $Comp
 L Device:C C13
 U 1 1 5CD6434E
@@ -2072,6 +2071,23 @@ Wire Wire Line
 	10030 9970 10030 10090
 Wire Wire Line
 	10030 10390 10030 10540
+$Comp
+L power:GND #PWR0107
+U 1 1 5CE962C3
+P 11150 10620
+F 0 "#PWR0107" H 11150 10370 50  0001 C CNN
+F 1 "GND" H 11155 10447 50  0000 C CNN
+F 2 "" H 11150 10620 50  0001 C CNN
+F 3 "" H 11150 10620 50  0001 C CNN
+	1    11150 10620
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11150 10620 11150 10530
+Wire Wire Line
+	11150 10530 11330 10530
+Wire Wire Line
+	11330 10530 11330 10620
 Wire Bus Line
 	11610 4190 11610 8500
 Wire Bus Line
