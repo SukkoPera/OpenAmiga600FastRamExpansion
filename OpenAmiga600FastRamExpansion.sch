@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "OpenAmiga600FastRamExpansion"
 Date "2019-05-19"
-Rev "1git"
+Rev "1"
 Comp "SukkoPera"
 Comment1 "Based on work by Kipper2K"
 Comment2 "Original design by lvd/NedoPC"

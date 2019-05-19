@@ -13,7 +13,7 @@
   (title_block
     (title OpenAmiga600FastRamExpansion)
     (date 2019-05-19)
-    (rev 1git)
+    (rev 1)
     (company SukkoPera)
     (comment 1 "Based on work by Kipper2K")
     (comment 2 "Original design by lvd/NedoPC")
