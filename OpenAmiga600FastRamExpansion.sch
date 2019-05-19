@@ -1,12 +1,12 @@
 EESchema Schematic File Version 4
 LIBS:OpenAmiga600FastRamExpansion-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "OpenAmiga600FastRamExpansion"
-Date "2019-02-27"
+Date "2019-05-19"
 Rev "1git"
 Comp "SukkoPera"
 Comment1 "Based on work by Kipper2K"
@@ -497,13 +497,13 @@ Wire Wire Line
 Wire Wire Line
 	1620 7460 1200 7460
 Wire Wire Line
-	1620 7660 1200 7660
+	1620 7960 1200 7960
 Wire Wire Line
-	1620 7760 1200 7760
+	1620 8060 1200 8060
 Wire Wire Line
-	1620 7960 1190 7960
+	1620 7660 1190 7660
 Wire Wire Line
-	1620 8060 1190 8060
+	1620 7760 1190 7760
 Wire Wire Line
 	1620 8260 1190 8260
 Text Label 1200 7060 0    50   ~ 0
@@ -514,13 +514,13 @@ Text Label 1200 7360 0    50   ~ 0
 a4
 Text Label 1200 7460 0    50   ~ 0
 a17
-Text Label 1190 7960 0    50   ~ 0
+Text Label 1190 7660 0    50   ~ 0
 a5
-Text Label 1190 8060 0    50   ~ 0
+Text Label 1190 7760 0    50   ~ 0
 a16
-Text Label 1200 7660 0    50   ~ 0
+Text Label 1200 7960 0    50   ~ 0
 a6
-Text Label 1200 7760 0    50   ~ 0
+Text Label 1200 8060 0    50   ~ 0
 a15
 Text Label 1190 8260 0    50   ~ 0
 mux_switch
@@ -607,13 +607,13 @@ Wire Wire Line
 Wire Wire Line
 	3620 7460 3200 7460
 Wire Wire Line
-	3620 7660 3200 7660
+	3620 7960 3200 7960
 Wire Wire Line
-	3620 7760 3200 7760
+	3620 8060 3200 8060
 Wire Wire Line
-	3620 7960 3190 7960
+	3620 7660 3190 7660
 Wire Wire Line
-	3620 8060 3190 8060
+	3620 7760 3190 7760
 Text Label 3200 7060 0    50   ~ 0
 a7
 Text Label 3200 7160 0    50   ~ 0
@@ -622,13 +622,13 @@ Text Label 3200 7360 0    50   ~ 0
 a8
 Text Label 3200 7460 0    50   ~ 0
 a13
-Text Label 3190 7960 0    50   ~ 0
+Text Label 3190 7660 0    50   ~ 0
 a9
-Text Label 3190 8060 0    50   ~ 0
+Text Label 3190 7760 0    50   ~ 0
 a12
-Text Label 3200 7660 0    50   ~ 0
+Text Label 3200 7960 0    50   ~ 0
 a10
-Text Label 3200 7760 0    50   ~ 0
+Text Label 3200 8060 0    50   ~ 0
 a11
 $Comp
 L power:GND #PWR07
@@ -783,9 +783,9 @@ ma2
 Text Label 2660 7360 0    50   ~ 0
 ma3
 Text Label 2660 7660 0    50   ~ 0
-ma5
-Text Label 2660 7960 0    50   ~ 0
 ma4
+Text Label 2660 7960 0    50   ~ 0
+ma5
 Wire Wire Line
 	4620 7060 4970 7060
 Wire Wire Line
@@ -799,9 +799,9 @@ ma6
 Text Label 4660 7360 0    50   ~ 0
 ma7
 Text Label 4660 7660 0    50   ~ 0
-ma9
-Text Label 4660 7960 0    50   ~ 0
 ma8
+Text Label 4660 7960 0    50   ~ 0
+ma9
 Text Label 5820 8030 0    50   ~ 0
 ma1
 Text Label 5820 8130 0    50   ~ 0
