@@ -13,7 +13,7 @@ Note that the A600 was not originally designed to support a Fast RAM expansion, 
 OpenAmiga600FastRamExpansion is basically a clone of [a RAM expansion produced by Kipper2K a few years ago](http://eab.abime.net/showthread.php?t=64218), based on [an earlier design by lvd/NedoPC](http://lvd.nedopc.com/Projects/a600_8mb/index.html). He has since stopped producing and selling these cards and I thought it was a pity that he didn't open his designs and actually took all of them down, as this card is quite cheap to build and really useful. So I set about recreating it from scratch. Kipper2K has also made other expansions, including an 8 MB version of this card, but I chose to work on this one as it was simpler and probably enough for most uses. Other cards might come in the future.
 
 ### Memory Compatibility
-The required RAM Type is 16 Mbit (1M×16) DRAM in the SOJ-42 package with up to 70-80 ns access time. It is 5v-only DRAM (not SD(!)RAM) often found in old 72-pin SIMMs, EDO chips might work or not. All chips having *8160* in their part number should be OK.
+The required RAM Type is 16 Mbit (1M×16) DRAM in the SOJ-42 package with up to 70-80 ns access time. It is 5v-only DRAM (not SDRAM!) often found in old 72-pin SIMMs, EDO chips might work or not. All chips having *8160* in their part number should be OK.
 
 See [OpenAmiga500FastRamExpansion](https://github.com/SukkoPera/OpenAmiga500FastRamExpansion#memory-compatibility) for a compatibility list.
 
@@ -32,7 +32,7 @@ After you solder the socket, you can cut the bottom of it so that the window in 
 
 Normally it is not necessary to mount all the decoupling capacitors. I usually skip C4 and C7. Maybe capacitor C13 can be left out as well, your choice. R4 should be chosen according to the particular led you will be using for LD1. Actually you are free to skip LD1 and R4 altogether, if you hate power LEDs.
 
-After everything has been soldered, you will need to program the CPLD. Whenever you do so, **make sure to carefully remove the board from your Amiga, or you might risk damaging it**. You can find the firmware [here](https://github.com/SukkoPera/OpenAmiga500FastRamExpansion/tree/master/firmware), along with instructions on how to flash it. Make sure to use the 4MB version! You can provide power through the pads of C13 if you need to do so.
+After everything has been soldered, you will need to program the CPLD. Whenever you do so, **make sure to carefully remove the board from your Amiga, or you might risk damaging it**. You can find the firmware [here](https://github.com/SukkoPera/OpenAmiga500FastRamExpansion/tree/master/firmware), along with instructions on how to flash it. Make sure to use the 4 MB version! You can provide power through the pads of C13 if you need to do so.
 
 Finally, install the expansion in your A600: place it over the CPU with the correct orientation and push it down firmly until it feels solidly in place but don't force it.
 
