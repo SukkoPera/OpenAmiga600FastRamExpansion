@@ -26,13 +26,13 @@ Lots of A600s (and of A1200s, for the record) have issues with leaking electroly
 
 Before soldering the CPU socket you will need to rework it a bit: you should sand down one of its edges, or it will hit resistor R102 that is present in REV 1.5 boards (at least). Thus try to fit it on the CPU (the large square chip with *MC68000* written on it) and see which corner it is. Make sure to match the correct orientation: one of the corners of the chip is cut and, if you look at the socket, one of its corners will match that.
 
-Besides that, most PLCC sockets have some sort of "stand-offs" on the bottom (which is going to be our top), which you are recommended to sand down, too. I also suggest to clean the CPU pins if possible, using contact cleaner or isopropyl alcool, as all sorts of gunk have probably gathered on them over the years. Let them dry well then. All of this should hopefully make the socket fit better on the chip.
+Besides that, most PLCC sockets have some sort of "stand-offs" on the bottom (which is going to be our top), which you are recommended to sand down, too. I also suggest to clean the CPU pins if possible, using contact cleaner or isopropyl alcool, as all sorts of gunk will have probably gathered on them over the years. Let them dry well then. All of this should hopefully make the socket fit better on the chip.
 
 After you solder the socket, you can cut the bottom of it so that the window in the PCB continues through the socket. Most sockets will already have holes on the bottom that will make this operation easier. This will allow you to install a 14x14mm heatsink on the CPU, which might be a good idea since installing the board will somewhat reduce the heat dissipation capabilities of the chip. Make sure to use good thermal adhesive/glue, otherwise you risk to make the dissipation even worse.
 
 Normally it is not necessary to mount all the decoupling capacitors. I usually skip C4 and C7. Maybe capacitor C13 can be left out as well, your choice. R4 should be chosen according to the particular led you will be using for LD1. Actually you are free to skip LD1 and R4 altogether, if you hate power LEDs.
 
-After everything has been soldered, you will need to program the CPLD. Whenever you do so, **make sure to carefully remove the board from your Amiga, or you might risk damaging it**. You can find the firmware files [here](https://github.com/SukkoPera/OpenAmiga500FastRamExpansion/tree/master/firmware), along with instructions on how to flash them.
+After everything has been soldered, you will need to program the CPLD. Whenever you do so, **make sure to carefully remove the board from your Amiga, or you might risk damaging it**. You can find the firmware [here](https://github.com/SukkoPera/OpenAmiga500FastRamExpansion/tree/master/firmware), along with instructions on how to flash it. Make sure to use the 4MB version!
 
 Finally, install the expansion in your A600: place it over the CPU with the correct orientation and push it down firmly until it feels solidly in place but don't force it.
 
