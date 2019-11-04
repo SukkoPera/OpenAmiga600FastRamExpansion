@@ -7,16 +7,20 @@ Anyway, whatever socket you use, it won't fit very well, because we're using it 
 
 ## Rework Procedure
 1. Remove the small nubs (highlighted in red) from the inside of the socket so that the inner of the socket is totally flat.
-![nubs](img/nubs.jpg)
+   
+   ![nubs](img/nubs.jpg)
 
 2. Put a sheet of sandpaper on a table and rub the socket on it until the edge of the socket (highlighted in red) is level with the tips of the internal metal pins (highlighted in yellow). Only ~0.5mm to ~1mm usually needs removing depending on the socket.
-![sand](img/sand.jpg)
-![sand2](img/sand2.jpg)
+   
+   ![sand](img/sand.jpg)
+   ![sand2](img/sand2.jpg)
 
 3. File out a small notch in the corner of the socket to allow for socket to sit over the SMD resistor on the motherboard.
-![notch](img/notch.jpg)
+
+   ![notch](img/notch.jpg)
 
 Hopefully your socket will now have a better fit!
+
 ![endresult](img/endresult.jpg)
 
 *(Thanks to users Lemaru and katarakt of the EAB forum for these hints)*
