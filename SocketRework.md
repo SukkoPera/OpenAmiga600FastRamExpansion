@@ -1,11 +1,11 @@
-The hardest thing to achieve for XXX is a good fit on the CPU for the socket.
+# PLCC Socket Rework
+The hardest thing to achieve when assembling an OpenAmiga600FastRamExpansion is a good fit on the CPU for the PLCC socket.
 
 Some people recommend using an [Augat PCS-068A](https://octopart.com/search?q=PCS-068A) socket and say it's the socket that is used on Furia cards, which admittedly fit very well on the CPU.
 
-Whatever socket you use, it won't fit very well, because we're using it differently to how it was designed. You can get a much better fit if you sand its surface down until it is level with the tips of the metal pins. This allows it to sit lower on the 68000 and grip the pins better.
+Anyway, whatever socket you use, it won't fit very well, because we're using it differently to how it was designed. You can get a much better fit if you sand its surface down until it is level with the tips of the metal pins. This allows it to sit lower on the 68000 and grip the pins better.
 
-This is what you have to do:
-
+## Rework Procedure
 1. Remove the small nubs (highlighted in red) from the inside of the socket so that the inner of the socket is totally flat.
 ![nubs](img/nubs.jpg)
 
