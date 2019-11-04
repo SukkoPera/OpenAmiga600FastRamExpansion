@@ -13,7 +13,7 @@ Note that the A600 was not originally designed to support a Fast RAM expansion, 
 OpenAmiga600FastRamExpansion is basically a clone of [a RAM expansion produced by Kipper2K a few years ago](http://eab.abime.net/showthread.php?t=64218), based on [an earlier design by lvd/NedoPC](http://lvd.nedopc.com/Projects/a600_8mb/index.html). He has since stopped producing and selling these cards and I thought it was a pity that he didn't open his designs and actually took all of them down, as this card is quite cheap to build and really useful. So I set about recreating it from scratch. Kipper2K has also made other expansions, including an 8 MB version of this card, but I chose to work on this one as it was simpler and probably enough for most uses. Other cards might come in the future.
 
 ### Memory Compatibility
-The required RAM Type is 16 Mbit (1M×16) DRAM in the SOJ-42 package with up to 70-80 ns access time. It is 5v-only DRAM (not SD(!)RAM) often found in old 72-pin SIMMs, EDO chips might work or not. All chips having *8160* in their part number should be OK.
+The required RAM Type is 16 Mbit (1M×16) DRAM in the SOJ-42 package with up to 70-80 ns access time. It is 5v-only DRAM (not SDRAM!) often found in old 72-pin SIMMs, EDO chips might work or not. All chips having *8160* in their part number should be OK.
 
 See [OpenAmiga500FastRamExpansion](https://github.com/SukkoPera/OpenAmiga500FastRamExpansion#memory-compatibility) for a compatibility list.
 
@@ -26,13 +26,13 @@ Lots of A600s (and of A1200s, for the record) have issues with leaking electroly
 
 Before soldering the CPU socket you will need to rework it a bit: you should sand down one of its edges, or it will hit resistor R102 that is present in REV 1.5 boards (at least). Thus try to fit it on the CPU (the large square chip with *MC68000* written on it) and see which corner it is. Make sure to match the correct orientation: one of the corners of the chip is cut and, if you look at the socket, one of its corners will match that.
 
-Besides that, most PLCC sockets have some sort of "stand-offs" on the bottom (which is going to be our top), which you are recommended to sand down, too. I also suggest to clean the CPU pins if possible, using contact cleaner or isopropyl alcool, as all sorts of gunk have probably gathered on them over the years. Let them dry well then. All of this should hopefully make the socket fit better on the chip.
+Besides that, most PLCC sockets have some sort of "stand-offs" on the bottom (which is going to be our top), which you are recommended to sand down, too. I also suggest to clean the CPU pins if possible, using contact cleaner or isopropyl alcool, as all sorts of gunk will have probably gathered on them over the years. Let them dry well then. All of this should hopefully make the socket fit better on the chip.
 
 After you solder the socket, you can cut the bottom of it so that the window in the PCB continues through the socket. Most sockets will already have holes on the bottom that will make this operation easier. This will allow you to install a 14x14mm heatsink on the CPU, which might be a good idea since installing the board will somewhat reduce the heat dissipation capabilities of the chip. Make sure to use good thermal adhesive/glue, otherwise you risk to make the dissipation even worse.
 
 Normally it is not necessary to mount all the decoupling capacitors. I usually skip C4 and C7. Maybe capacitor C13 can be left out as well, your choice. R4 should be chosen according to the particular led you will be using for LD1. Actually you are free to skip LD1 and R4 altogether, if you hate power LEDs.
 
-After everything has been soldered, you will need to program the CPLD. Whenever you do so, **make sure to carefully remove the board from your Amiga, or you might risk damaging it**. You can find the firmware files [here](https://github.com/SukkoPera/OpenAmiga500FastRamExpansion/tree/master/firmware), along with instructions on how to flash them.
+After everything has been soldered, you will need to program the CPLD. Whenever you do so, **make sure to carefully remove the board from your Amiga, or you might risk damaging it**. You can find the firmware [here](https://github.com/SukkoPera/OpenAmiga500FastRamExpansion/tree/master/firmware), along with instructions on how to flash it. Make sure to use the 4 MB version! You can provide power through the pads of C13 if you need to do so.
 
 Finally, install the expansion in your A600: place it over the CPU with the correct orientation and push it down firmly until it feels solidly in place but don't force it.
 
@@ -60,7 +60,7 @@ The Documentation Location of the original project is https://github.com/SukkoPe
 ### Support the Project
 Since the project is open you are free to get the PCBs made by your preferred manufacturer, however in case you want to support the development, you can order them from PCBWay through this link:
 
-[![PCB from PCBWay](https://www.pcbway.com/project/img/images/frompcbway.png)](https://www.pcbway.com/project/shareproject/OpenAmiga600FastRamExpansion_V1.html)
+[![PCB from PCBWay](https://www.pcbway.com/project/img/images/frompcbway.png)](https://www.pcbway.com/project/shareproject/OpenAmiga600FastRamExpansion.html)
 
 You get my gratitude and cheap, professionally-made and good quality PCBs, I get some credit that will help with this and [other projects](https://www.pcbway.com/project/member/shareproject/?bmbid=41100). You won't even have to worry about the various PCB options, it's all pre-configured for you!
 
