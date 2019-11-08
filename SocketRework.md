@@ -15,7 +15,7 @@ Anyway, whatever socket you use, it won't fit very well, because we're using it 
    ![sand](img/sand.jpg)
    ![sand2](img/sand2.jpg)
 
-3. File out a small notch in the corner of the socket to allow for socket to sit over the SMD resistor on the motherboard.
+3. File out a small notch in the corner of the socket to allow for socket to sit over the `R102` SMD resistor on the motherboard.
 
    ![notch](img/notch.jpg)
 
