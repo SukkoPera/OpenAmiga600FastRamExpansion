@@ -34,7 +34,7 @@ You are finally ready to install the expansion in your A600 but, before you do t
 
 Before reassembling your case, I recommend to run [SysTest/Amiga Test Kit](https://github.com/keirf/Amiga-Stuff). Use the Memory option (<kbd>F1</kbd>), it must show 4 MB of Fast RAM. Then start the Memory Test (<kbd>F1</kbd> again) and let it run for 50-100 rounds: if it doesn't find any errors, you are probably good to go. If you get any errors, power off your computer and try to give the expansion a better fit, by pushing it further down or slightly twisting it back and forth.
 
-It might happen that the board slowly works its way out of the socket over time. To avoid this you can anchor it to the mainboard using the hole to the left of the CPU, which should align with one of the holes for the HD cradle legs.
+It might happen that the board slowly works its way out of the socket over time. To avoid this you can anchor it to the mainboard using the hole to the left of the CPU, which should align with one of the holes for the HD cradle legs. If you have a 3D printer, another option is using [this nice frame designed by blekihun](https://www.thingiverse.com/thing:4824656).
 
 Note that, as already mentioned, PLCC sockets are not meant to be used this way, which means that the contact quality degrades a bit with every insertion or removal of the board. So, try not to remove it unnecessarily. If you find that the contact has degraded so much that the machine is no longer stable, replace the socket with a new one.
 
@@ -65,10 +65,6 @@ Also, if you still have to register to that site, [you can use this link](https:
 Again, if you want to use another manufacturer, feel free to, don't feel obligated :). But then you can buy me a coffee if you want:
 
 <a href='https://ko-fi.com/L3L0U18L' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
-
-
-### Get Help
-If you need help or have questions, you can join [the official Telegram group](https://t.me/joinchat/HUHdWBC9J9JnYIrvTYfZmg).
 
 ### Thanks
 - lvd for the initial design
